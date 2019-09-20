@@ -14,6 +14,8 @@
 		3D6683AB23356A9F00E17150 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D6683A923356A9F00E17150 /* LaunchScreen.storyboard */; };
 		3D6683B623356A9F00E17150 /* FlotillaCarrosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6683B523356A9F00E17150 /* FlotillaCarrosTests.swift */; };
 		3D6683C123356A9F00E17150 /* FlotillaCarrosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6683C023356A9F00E17150 /* FlotillaCarrosUITests.swift */; };
+		3D6683D423356B5A00E17150 /* Carro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6683D323356B5A00E17150 /* Carro.swift */; };
+		3D6683D823356BA500E17150 /* CeldaCarroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6683D723356BA500E17150 /* CeldaCarroController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		3D6683BC23356A9F00E17150 /* FlotillaCarrosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlotillaCarrosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D6683C023356A9F00E17150 /* FlotillaCarrosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlotillaCarrosUITests.swift; sourceTree = "<group>"; };
 		3D6683C223356A9F00E17150 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D6683D323356B5A00E17150 /* Carro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carro.swift; sourceTree = "<group>"; };
+		3D6683D723356BA500E17150 /* CeldaCarroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaCarroController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,11 @@
 		3D66839F23356A9D00E17150 /* FlotillaCarros */ = {
 			isa = PBXGroup;
 			children = (
-				3D6683A023356A9D00E17150 /* AppDelegate.swift */,
-				3D6683A223356A9D00E17150 /* ViewController.swift */,
-				3D6683A423356A9D00E17150 /* Main.storyboard */,
-				3D6683A723356A9F00E17150 /* Assets.xcassets */,
-				3D6683A923356A9F00E17150 /* LaunchScreen.storyboard */,
-				3D6683AC23356A9F00E17150 /* Info.plist */,
+				3D6683D223356AE400E17150 /* Storyboards */,
+				3D6683D123356ADB00E17150 /* Models */,
+				3D6683D023356ACE00E17150 /* Resources */,
+				3D6683CF23356AB300E17150 /* ViewControllers */,
+				3D6683CE23356AAB00E17150 /* App */,
 			);
 			path = FlotillaCarros;
 			sourceTree = "<group>";
@@ -123,6 +126,49 @@
 				3D6683C223356A9F00E17150 /* Info.plist */,
 			);
 			path = FlotillaCarrosUITests;
+			sourceTree = "<group>";
+		};
+		3D6683CE23356AAB00E17150 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				3D6683AC23356A9F00E17150 /* Info.plist */,
+				3D6683A023356A9D00E17150 /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		3D6683CF23356AB300E17150 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D6683A223356A9D00E17150 /* ViewController.swift */,
+				3D6683D723356BA500E17150 /* CeldaCarroController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3D6683D023356ACE00E17150 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3D6683A723356A9F00E17150 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3D6683D123356ADB00E17150 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3D6683D323356B5A00E17150 /* Carro.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3D6683D223356AE400E17150 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3D6683A423356A9D00E17150 /* Main.storyboard */,
+				3D6683A923356A9F00E17150 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +303,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D6683A323356A9D00E17150 /* ViewController.swift in Sources */,
+				3D6683D823356BA500E17150 /* CeldaCarroController.swift in Sources */,
+				3D6683D423356B5A00E17150 /* Carro.swift in Sources */,
 				3D6683A123356A9D00E17150 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
